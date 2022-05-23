@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: sans-serif;
+}
+
+#app {
+    width: 400px;
+    height: 100vh;
+    margin: auto auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.male {
+    border: 2px solid steelblue;
+    background-color: steelblue;
+    border: 3px;
+}
+
+.female {
+    background-color: pink;
+    color: #333;
+}

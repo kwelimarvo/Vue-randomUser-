@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Generator</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <img :src="picture" :alt="`${fname} ${lname}`" :class="['gender', 'rounded-lg', 'cursor-pointer', 'hover:animate-bounce']">
+        <h1> Hello {{fname}} {{lname}}</h1>
+        <h3>Email: {{email}}</h3>
+        <span class="uppercase">Gender: {{gender}}</span>
+        <button @click="getUser()" :class="[gender, 'rounded-md', 'p-2', 'hover:bg-sky-600', 'hover:text-white']">Get Random User</button>
+    </div>   
+
+
+    
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="app.js"></script>
+</body>
+</html>
